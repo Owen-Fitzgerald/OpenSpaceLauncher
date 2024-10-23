@@ -41,7 +41,6 @@ jobs:
       run: dotnet publish ./GameLauncher/GameLauncher.csproj --configuration Release --output ./publish
 
     # Step 5: Upload the build artifact (the build will be stored in ./publish)
-    - name: Upload
     - uses: actions/upload-artifact@v4
       with:
         # Name of the artifact to upload.
