@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>images\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\Close.png" />
+    <None Remove="images\Collapse.png" />
+    <None Remove="images\Icon.ico" />
+    <None Remove="images\Icon_PNG.png" />
+    <None Remove="images\LauncherBackground.png" />
+    <None Remove="images\Maximize.png" />
+    <None Remove="images\Minimize.png" />
+    <None Remove="images\Settings.png" />
+    <None Remove="images\TitleLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\Close.png" />
+    <Resource Include="images\Collapse.png" />
+    <Resource Include="images\Icon.ico" />
+    <Resource Include="images\Icon_PNG.png" />
+    <Resource Include="images\LauncherBackground.png" />
+    <Resource Include="images\Maximize.png" />
+    <Resource Include="images\Minimize.png" />
+    <Resource Include="images\Settings.png" />
+    <Resource Include="images\TitleLogo.png" />
+  </ItemGroup>
+
+</Project>
