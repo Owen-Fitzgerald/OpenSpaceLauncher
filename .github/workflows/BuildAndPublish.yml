@@ -16,7 +16,6 @@ jobs:
 
     steps:
     # Step 1: Checkout the code from the master branch
-    - name: Checkout repository
     - uses: actions/checkout@v4
     
     # Step 2: Set up .NET Core (or the appropriate version you're using)
