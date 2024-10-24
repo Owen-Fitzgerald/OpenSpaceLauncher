@@ -6,6 +6,10 @@
     <UseWPF>true</UseWPF>
     <ApplicationIcon>images\Icon.ico</ApplicationIcon>
 	<EnableWindowsTargeting>true</EnableWindowsTargeting>
+	<StartupObject>GameLauncher.App</StartupObject>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<RootNamespace>Geraldine.GameLauncher</RootNamespace>
+	<AssemblyName>GameLauncher</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="images\Close.png" />
     <Resource Include="images\Collapse.png" />
     <Resource Include="images\Icon.ico" />
@@ -30,6 +38,21 @@
     <Resource Include="images\Minimize.png" />
     <Resource Include="images\Settings.png" />
     <Resource Include="images\TitleLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\SettingsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ModsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PlaysetsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DLCView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>
